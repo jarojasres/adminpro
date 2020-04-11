@@ -1,1 +1,45 @@
-<p>graficas1 works!</p>
+<div class="row">
+    <div class="col-6" *ngFor="let item of graficas; let i = index">        
+        
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [titulo]="graficos[item].leyenda" [data]="graficos[item]['data']" [labels]="graficos[item]['labels']" [chartType]="graficos[item]['type']"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [data]="data1" [labels]="labels1"  [titulo]="titulo1" [chartType]="chartType1" ></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [data]="data2" [labels]="labels2" [titulo]="titulo2" [chartType]="chartType2" ></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [data]="data3" [labels]="labels3" [titulo]="titulo3" [chartType]="chartType3" ></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [data]="data4" [labels]="labels4" [titulo]="titulo4" [chartType]="chartType4" ></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+</div>
